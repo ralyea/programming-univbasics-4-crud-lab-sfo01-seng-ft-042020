@@ -45,6 +45,5 @@ end
 
 def update_element_from_index(array, index_number, element)
   array = ["wow", "I", "am", "really", "learning", "arrays!"]
-  array[array.index(4)] = "totally"
-  
+  array.map { |x| x == "really" ? "totally" : x }
 end
